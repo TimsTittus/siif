@@ -1,87 +1,78 @@
 "use client";
 
 import Link from "next/link";
-import { Globe, Mail, Phone, MapPin } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-white border-t border-zinc-100 relative pt-24 pb-12 overflow-hidden">
-      {/* "START SOMETHING" Watermark */}
-      <div className="absolute top-0 left-0 w-full text-center select-none pointer-events-none py-10">
-        <span className="text-[12vw] font-black text-zinc-100 tracking-tighter opacity-100 uppercase leading-none">
-          START <span className="text-primary/10">SOMETHING</span>
-        </span>
-      </div>
+    <footer className="bg-white pt-20 pb-12 lg:pt-32 lg:pb-16 w-full flex flex-col items-center overflow-hidden">
+      <div className="max-w-[1496px] w-full px-6 flex flex-col gap-10 lg:gap-24">
+        {/* Top Section */}
+        <div className="flex flex-col lg:flex-row justify-start items-start gap-4 lg:gap-0">
 
-      <div className="container relative z-10 mx-auto px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          {/* Logo & Info */}
-          <div className="flex flex-col space-y-6">
-            <span className="text-3xl font-bold tracking-tighter text-zinc-900">
-              SIIF<span className="text-primary">.</span>
-            </span>
-            <p className="text-zinc-500 max-w-xs leading-relaxed">
-              Leading the way in innovation and entrepreneurship. Empowering the 
-              next generation of founders to change the world.
+          {/* Logo & Tagline */}
+          <div className="flex flex-col w-full lg:w-auto">
+            <h2 className="text-[clamp(80px,12vw,170px)] font-semibold leading-[115.967%] tracking-[-0.04em] text-[#565555] font-hanken">
+              SIIF.
+            </h2>
+            <p className="text-[clamp(20px,3vw,36px)] font-semibold leading-[115.967%] tracking-[-0.04em] text-[#565555] font-hanken max-w-[400px]">
+              From Idea to Impact. Built inside SJCET Palai.
             </p>
-            <div className="flex space-x-4">
-              <Link href="#" className="h-10 w-10 flex items-center justify-center rounded-full border border-zinc-200 text-zinc-400 hover:border-primary hover:text-primary transition-all">
-                <Globe size={18} />
+          </div>
+
+          {/* Contact Card */}
+          <div className="w-full lg:w-[347px] p-6 lg:p-[22px_43px] rounded-[20px] lg:rounded-[25px] border-[#DCDCDC] border bg-[#F9F9F9] flex flex-col gap-3 lg:gap-[9px] self-stretch lg:self-start lg:mr-32 lg:ml-24 mt-4 lg:mt-0">
+            <span className="text-[clamp(16px,1.5vw,20px)] font-semibold leading-[115.967%] tracking-[-0.04em] text-[#565555] font-hanken">
+              Contact Us
+            </span>
+            <Link
+              href="mailto:incubator@sjcetpalai.ac.in"
+              className="text-[clamp(16px,1.5vw,20px)] font-semibold leading-[115.967%] tracking-[-0.04em] text-[#C41E3A] font-hanken underline decoration-[#C41E3A] underline-offset-4 break-all"
+            >
+              incubator@sjcetpalai.ac.in
+            </Link>
+            <span className="text-[clamp(16px,1.5vw,20px)] font-semibold leading-[115.967%] tracking-[-0.04em] text-[#565555] font-hanken">
+              Ph: +91 123 456 789
+            </span>
+            <span className="text-[clamp(16px,1.5vw,20px)] font-semibold leading-[115.967%] tracking-[-0.04em] text-[#565555] font-hanken">
+              SJCET Palai, Kottayam, Kerala
+            </span>
+          </div>
+
+          {/* Navigation Grid */}
+          <div className="grid w-full lg:w-[622px] grid-cols-2 gap-x-4 sm:gap-x-8 lg:gap-x-[75px] gap-y-6 lg:gap-y-[32px] lg:ml-auto mt-6 lg:mt-0">
+            <div className="flex flex-col gap-4 lg:gap-[32px]">
+              <Link href="/" className="text-[clamp(18px,2.5vw,24px)] font-semibold leading-[115.967%] tracking-[-0.04em] text-[#565555] font-hanken hover:opacity-70 transition-opacity whitespace-nowrap">
+                Home
               </Link>
-              <Link href="#" className="h-10 w-10 flex items-center justify-center rounded-full border border-zinc-200 text-zinc-400 hover:border-primary hover:text-primary transition-all">
-                <Mail size={18} />
+              <Link href="/about" className="text-[clamp(18px,2.5vw,24px)] font-semibold leading-[115.967%] tracking-[-0.04em] text-[#565555] font-hanken hover:opacity-70 transition-opacity whitespace-nowrap">
+                About
+              </Link>
+              <Link href="/incubation" className="text-[clamp(18px,2.5vw,24px)] font-semibold leading-[115.967%] tracking-[-0.04em] text-[#565555] font-hanken hover:opacity-70 transition-opacity whitespace-nowrap">
+                Incubation
+              </Link>
+              <Link href="/programs" className="text-[clamp(18px,2.5vw,24px)] font-semibold leading-[115.967%] tracking-[-0.04em] text-[#565555] font-hanken hover:opacity-70 transition-opacity whitespace-nowrap">
+                Programs
+              </Link>
+            </div>
+            <div className="flex flex-col gap-4 lg:gap-[32px]">
+              <Link href="/schemes" className="text-[clamp(18px,2.5vw,24px)] font-semibold leading-[115.967%] tracking-[-0.04em] text-[#565555] font-hanken hover:opacity-70 transition-opacity whitespace-nowrap">
+                Schemes
+              </Link>
+              <Link href="/gallery" className="text-[clamp(18px,2.5vw,24px)] font-semibold leading-[115.967%] tracking-[-0.04em] text-[#565555] font-hanken hover:opacity-70 transition-opacity whitespace-nowrap">
+                Gallery
+              </Link>
+              <Link href="/careers" className="text-[clamp(18px,2.5vw,24px)] font-semibold leading-[115.967%] tracking-[-0.04em] text-[#565555] font-hanken hover:opacity-70 transition-opacity whitespace-nowrap">
+                Careers
               </Link>
             </div>
           </div>
-
-          {/* Quick Links */}
-          <div>
-            <h4 className="text-zinc-900 font-bold mb-6 uppercase tracking-wider text-sm">Programs</h4>
-            <ul className="space-y-4">
-              <li><Link href="#" className="text-zinc-600 hover:text-primary transition-colors">Pre-Incubation</Link></li>
-              <li><Link href="#" className="text-zinc-600 hover:text-primary transition-colors">Incubation</Link></li>
-              <li><Link href="#" className="text-zinc-600 hover:text-primary transition-colors">Acceleration</Link></li>
-              <li><Link href="#" className="text-zinc-600 hover:text-primary transition-colors">Virtual Incubation</Link></li>
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div>
-            <h4 className="text-zinc-900 font-bold mb-6 uppercase tracking-wider text-sm">Resources</h4>
-            <ul className="space-y-4">
-              <li><Link href="#" className="text-zinc-600 hover:text-primary transition-colors">Schemes</Link></li>
-              <li><Link href="#" className="text-zinc-600 hover:text-primary transition-colors">Gallery</Link></li>
-              <li><Link href="#" className="text-zinc-600 hover:text-primary transition-colors">Careers</Link></li>
-              <li><Link href="#" className="text-zinc-600 hover:text-primary transition-colors">Privacy Policy</Link></li>
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="text-zinc-900 font-bold mb-6 uppercase tracking-wider text-sm">Contact Us</h4>
-            <ul className="space-y-4 text-zinc-600">
-              <li className="flex items-start space-x-3">
-                <MapPin size={20} className="text-primary flex-shrink-0 mt-0.5" />
-                <span>SIIF, SSCBS, Rohini Sector 17, New Delhi, 110089</span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <Mail size={20} className="text-primary flex-shrink-0" />
-                <span>info@siifssbs.com</span>
-              </li>
-              <li className="flex items-center space-x-3">
-                <Phone size={20} className="text-primary flex-shrink-0" />
-                <span>+91 999 999 9999</span>
-              </li>
-            </ul>
-          </div>
         </div>
 
-        <div className="border-t border-zinc-100 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0 text-xs text-zinc-400">
-          <p>© {new Date().getFullYear()} SIIF. All rights reserved.</p>
-          <div className="flex space-x-8">
-            <Link href="#" className="hover:text-zinc-900 transition-colors">Terms of Service</Link>
-            <Link href="#" className="hover:text-zinc-900 transition-colors">Cookie Policy</Link>
-          </div>
+        {/* Bottom Banner */}
+        <div className="w-full flex justify-center lg:mt-12 overflow-hidden px-4">
+          <h1 className="w-full text-center text-[clamp(28px,8.5vw,175.616px)] font-[900] leading-[1.0] tracking-[-0.04em] font-hanken bg-gradient-to-b from-[#EBEBEB] to-transparent bg-clip-text text-transparent select-none whitespace-nowrap">
+            START SOMETHING
+          </h1>
         </div>
       </div>
     </footer>
