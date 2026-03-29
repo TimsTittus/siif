@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 
 export const Impact = () => {
   return (
-    <section className="w-full bg-white py-12 md:py-24 overflow-hidden">
+    <section className="w-full bg-white pt-4 pb-12 md:pt-12 md:pb-24 overflow-hidden">
 
-      <div className="flex items-center justify-center gap-4 md:gap-11 mb-20 md:mb-32 px-4">
+      <div className="flex items-center justify-center gap-4 md:gap-11 mb-8 md:mb-16 px-4">
 
         <div className="hidden md:block w-full max-w-[475px] h-[3px] bg-black/15" />
 
