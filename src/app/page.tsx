@@ -2,6 +2,7 @@ import { Hero } from "@/components/Hero";
 import { Intro } from "@/components/Intro";
 import { ServicesHub } from "@/components/ServicesHub";
 import { FounderJourney } from "@/components/FounderJourney";
+import { Impact } from "@/components/Impact";
 import { CTA } from "@/components/CTA";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
         <Intro />
         <ServicesHub />
         <FounderJourney />
+        <Impact />
         <CTA />
       </main>
     </div>
