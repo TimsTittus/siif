@@ -9,7 +9,7 @@ export function Intro() {
       >
 
         <div className="relative z-20 w-full max-w-[860px] flex flex-col items-center text-center mx-auto shrink-0">
-          <p className="text-sm font-normal text-[#9A9A9A] mb-3 tracking-wide">
+          <p className="text-base md:text-[18px] font-medium text-[#9A9A9A] mb-3 tracking-wide">
             What is SIIF?
           </p>
           <h1 className="text-[22px] md:text-[28px] lg:text-[36px] font-semibold leading-[1.4] tracking-tight text-[#4A4A4A]">
@@ -23,82 +23,55 @@ export function Intro() {
           </h1>
         </div>
 
-        <div
-          className="hidden sm:flex w-full max-w-[1400px] mx-auto mt-0 px-2 md:px-4 items-end shrink-0"
-          style={{ minHeight: 'clamp(120px, 22vw, 360px)' }}
-        >
+        <div className="flex w-full max-w-[1300px] mx-auto mt-6 px-0 md:px-6 items-end justify-center shrink-0">
 
-          <div className="flex-[1.1] flex items-end justify-end pr-[1%]">
+          <div
+            className="flex-[1.4] flex items-start justify-end relative z-30"
+            style={{ marginBottom: 'clamp(30px, 12vw, 160px)' }}
+          >
             <img
               src="assets/intro-leftcube.png"
               alt="Left Cube"
-              style={{ width: 'clamp(160px, 21vw, 300px)' }}
-              className="object-contain drop-shadow-xl transition-all duration-500 ease-out hover:-translate-y-3 hover:scale-105"
+              className="w-[180%] max-w-[360px] object-contain drop-shadow-xl transition-all duration-500 ease-out hover:-translate-y-3 hover:scale-[1.05]"
             />
           </div>
 
-
           <div
-            className="flex-[0.7] flex items-end justify-center"
-            style={{ marginBottom: 'clamp(60px, 10vw, 140px)' }}
+            className="flex-[1.1] flex items-end justify-center relative z-30 -mr-[6%] md:-mr-[4%]"
+            style={{ marginBottom: 'clamp(80px, 35vw, 370px)' }}
           >
             <img
               src="assets/intro-leftglow.png"
               alt="Left Glow"
-              style={{ width: 'clamp(100px, 12vw, 180px)' }}
-              className="object-contain drop-shadow-xl transition-all duration-500 ease-out hover:-translate-y-3 hover:scale-105"
+              className="w-[150%] max-w-[280px] object-contain drop-shadow-xl transition-all duration-500 ease-out hover:-translate-y-3 hover:scale-[1.05]"
             />
           </div>
 
-
-          <div className="flex-[1.8] flex items-end justify-center">
+          <div className="flex-[3.5] flex items-end justify-center relative z-20 -mx-[8%] md:-mx-[5%]">
             <img
               src="assets/intro-platform.png"
               alt="SIIF Platform"
-              style={{ width: 'clamp(260px, 32vw, 500px)' }}
-              className="object-contain drop-shadow-2xl transition-transform duration-500 ease-out hover:-translate-y-4"
+              className="w-[115%] md:w-[105%] max-w-[550px] object-contain drop-shadow-2xl transition-transform duration-500 ease-out hover:-translate-y-4"
             />
           </div>
 
-
-          <div
-            className="flex-[0.7] flex items-end justify-center"
-            style={{ marginBottom: 'clamp(60px, 10vw, 140px)' }}
-          >
+          <div className="flex-[1.1] flex items-end justify-center relative z-30 -mr-[6%] md:-mr-[4%]">
             <img
               src="assets/intro-rightstack.png"
               alt="Right Stack"
-              style={{ width: 'clamp(100px, 12vw, 180px)' }}
-              className="object-contain drop-shadow-xl transition-all duration-500 ease-out hover:-translate-y-3 hover:scale-105"
+              className="w-[150%] max-w-[280px] object-contain drop-shadow-xl transition-all duration-500 ease-out hover:-translate-y-3 hover:scale-[1.05]"
             />
           </div>
 
-
-          <div className="flex-[1.1] flex items-end justify-start pl-[1%]">
+          <div
+            className="flex-[1.4] flex items-end justify-start relative z-30"
+            style={{ marginBottom: 'clamp(60px, 18vw, 200px)' }}
+          >
             <img
               src="assets/intro-rightglass.png"
               alt="Right Glass"
-              style={{ width: 'clamp(160px, 21vw, 300px)' }}
-              className="object-contain drop-shadow-xl transition-all duration-500 ease-out hover:-translate-y-3 hover:scale-105"
+              className="w-[180%] max-w-[360px] object-contain drop-shadow-xl transition-all duration-500 ease-out hover:-translate-y-3 hover:scale-[1.05]"
             />
-          </div>
-        </div>
-
-        <div
-          className="sm:hidden flex w-full max-w-[480px] mx-auto mt-2 px-2 items-end shrink-0"
-          style={{ minHeight: '160px' }}
-        >
-          <div className="flex-1 flex items-end justify-end pr-2" style={{ marginBottom: '40px' }}>
-            <img src="assets/intro-leftglow.png" alt="Left Glow"
-              className="w-[clamp(70px,20vw,110px)] object-contain drop-shadow-xl" />
-          </div>
-          <div className="flex-[1.8] flex items-end justify-center">
-            <img src="assets/intro-platform.png" alt="SIIF Platform"
-              className="w-full max-w-[220px] object-contain drop-shadow-2xl" />
-          </div>
-          <div className="flex-1 flex items-end justify-start pl-2" style={{ marginBottom: '40px' }}>
-            <img src="assets/intro-rightglass.png" alt="Right Glass"
-              className="w-[clamp(70px,20vw,110px)] object-contain drop-shadow-xl" />
           </div>
         </div>
 
@@ -138,15 +111,7 @@ export function Intro() {
   );
 }
 
-function StatCard({
-  number,
-  highlight,
-  label,
-}: {
-  number: string;
-  highlight: string;
-  label: string;
-}) {
+function StatCard({ number, highlight, label, }: { number: string; highlight: string; label: string; }) {
   return (
     <div className="p-[5px] rounded-[32px] bg-linear-to-r from-[#FFFFFF] to-[#FDFDFD]">
       <div className="bg-[#F8F8F8] rounded-[28px] p-[28px_24px] flex flex-col justify-center min-h-[140px] shadow-[0_12px_40px_rgba(0,0,0,0.1)] transition-transform duration-300 ease-out hover:-translate-y-2">
