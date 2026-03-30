@@ -31,7 +31,7 @@ const mobileItems = [
 const FONT = "Hanken Grotesk, sans-serif";
 
 const pillStyle: React.CSSProperties = {
-  background: "linear-gradient(135deg, #F12837 0%, #700333 100%)",
+  background: "linear-gradient(to bottom, #F12837 0%, #700333 100%)",
   boxShadow: "0 8px 24px rgba(112,3,51,0.38), inset 0 1px 3px rgba(255,255,255,0.18)",
   fontFamily: FONT,
 };

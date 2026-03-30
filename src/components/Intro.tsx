@@ -4,7 +4,7 @@ export function Intro() {
   return (
     <>
       <section
-        className="relative w-full h-auto sm:min-h-dvh overflow-hidden bg-[#F5F6F7] flex flex-col items-center px-4 pt-[5vh] pb-0 sm:pb-[4vh]"
+        className="relative w-full h-auto overflow-hidden bg-[#F5F6F7] flex flex-col items-center px-4 pt-[5vh] pb-[4vh]"
         style={{ fontFamily: 'var(--font-hanken-grotesk), sans-serif' }}
       >
 
