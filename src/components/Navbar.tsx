@@ -19,49 +19,49 @@ const navLinks = [
   { name: "Home", href: "/" },
   {
     name: "About Us",
-    href: "#about",
+    href: "/about-siif",
     subLinks: [
       { name: "About SIIF", href: "/about-siif" },
-      { name: "Management Team", href: "#management" },
-      { name: "SIIF In Media", href: "#media" },
-      { name: "Network", href: "#network" },
+      { name: "Management Team", href: "/management-team" },
+      { name: "SIIF In Media", href: "/media" },
+      { name: "Network", href: "/network" },
     ]
   },
   {
     name: "Incubation",
-    href: "#incubation",
+    href: "/incubation-program",
     subLinks: [
-      { name: "Incubation Program", href: "#program" },
-      { name: "Facilities", href: "#facilities" },
-      { name: "Mentoring", href: "#mentoring" },
-      { name: "Selection", href: "#selection" },
-      { name: "Funding", href: "#funding" },
-      { name: "Apply For Incubation", href: "#apply" },
+      { name: "Incubation Program", href: "/incubation-program" },
+      { name: "Facilities", href: "/facilities" },
+      { name: "Mentoring", href: "/mentoring" },
+      { name: "Selection", href: "/selection" },
+      { name: "Funding", href: "/funding" },
+      { name: "Apply For Incubation", href: "/apply-incubation" },
     ]
   },
   {
     name: "Startups",
-    href: "#startups",
+    href: "/current-companies",
     subLinks: [
-      { name: "Current Companies", href: "#current" },
-      { name: "Graduated Companies", href: "#graduated" },
-      { name: "Testimonials", href: "#testimonials" },
-      { name: "Awards & Recognition", href: "#awards" },
+      { name: "Current Companies", href: "/current-companies" },
+      { name: "Graduated Companies", href: "/graduated-companies" },
+      { name: "Testimonials", href: "/testimonials" },
+      { name: "Awards & Recognition", href: "/awards" },
     ]
   },
   {
     name: "Programs",
-    href: "#programs",
+    href: "/sponsored-programs",
     subLinks: [
-      { name: "Sponsored Programs", href: "#sponsored" },
-      { name: "Workshops", href: "#workshops" },
-      { name: "Trainings", href: "#trainings" },
-      { name: "Other Events", href: "#events" },
+      { name: "Sponsored Programs", href: "/sponsored-programs" },
+      { name: "Workshops", href: "/workshops" },
+      { name: "Trainings", href: "/trainings" },
+      { name: "Other Events", href: "/events" },
     ]
   },
-  { name: "Schemes", href: "#schemes" },
-  { name: "Gallery", href: "#gallery" },
-  { name: "Careers", href: "#careers" },
+  { name: "Schemes", href: "/schemes" },
+  { name: "Gallery", href: "/gallery" },
+  { name: "Careers", href: "/careers" },
 ];
 
 export function Navbar() {
