@@ -7,16 +7,6 @@ import { motion } from "framer-motion";
 export const Hero = () => {
   return (
     <section className="relative min-h-[90vh] flex flex-col justify-center pt-24 overflow-hidden bg-white">
-      {/* Rocket Trail Image Asset*/}
-      <div className="absolute top-[59%] left-[-10%] w-[120vw] h-[500px] z-0 opacity-100 pointer-events-none overflow-visible">
-        <Image
-          src="/assets/image 1.png"
-          alt="Rocket Trail"
-          fill
-          className="object-contain object-left"
-          priority
-        />
-      </div>
 
       <div className="container relative z-10 mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-[1030px_1fr] gap-4 items-start">
@@ -30,8 +20,8 @@ export const Hero = () => {
                 fontWeight: 600,
                 lineHeight: '98.155%',
                 letterSpacing: '-3.587px',
-                width: '1030px',
-                height: '183px',
+                width: 'auto',
+                minHeight: 'auto',
                 maxWidth: '100%',
               }}
             >
@@ -92,10 +82,10 @@ export const Hero = () => {
             </Button>
 
             <div
-              className="text-right ml-auto mt-12 pb-8"
+              className="text-right ml-auto mt-6 md:mt-12 pb-8"
               style={{
-                width: '546px',
-                height: '240px',
+                width: 'auto',
+                height: 'auto',
                 maxWidth: '100%'
               }}
             >
@@ -117,36 +107,59 @@ export const Hero = () => {
           </div>
         </div>
 
-        {/* Rocket Visual */}
-        <div className="absolute top-[44%] left-[20%] w-[300px] md:w-[450px] h-[250px] z-10 pointer-events-none">
-          <motion.div
-            initial={{ x: 300, y: 100, opacity: 0 }}
-            animate={{ x: 0, y: 0, opacity: 1 }}
-            transition={{ duration: 1.5, ease: "easeOut" }}
-          >
+        {/* Rocket + Trail Group */}
+        <motion.div
+          className="absolute top-[50%] md:top-[44%] left-[10%] md:left-[20%] z-10 pointer-events-none flex items-center"
+          initial={{ x: -500, y: 200, opacity: 0 }}
+          animate={{ x: 0, y: 0, opacity: 1 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
+        >
+          <div className="relative w-[200px] sm:w-[300px] md:w-[450px]">
+            {/* Desktop Rocket Trail */}
+            <div className="hidden md:block absolute top-[48%] left-[-150%] w-[120vw] h-[500px] z-0 opacity-100 pointer-events-none overflow-visible">              <Image
+              src="/assets/image 1.png"
+              alt="Rocket Trail Desktop"
+              fill
+              className="object-contain object-left"
+              priority
+            />
+            </div>
+
+            {/* Mobile Rocket Trail */}
+            <div className="block md:hidden absolute top-[100%] left-[-110%] w-[120vw] h-[180px] z-0 opacity-100 pointer-events-none overflow-visible -translate-y-1/2 rotate-[-6deg]">
+              <Image
+                src="/assets/image 1.png"
+                alt="Rocket Trail Mobile"
+                fill
+                className="object-contain object-left"
+                priority
+              />
+            </div>
+
+            {/* Rocket Visual */}
             <Image
               src="/assets/Rectangle.png"
               alt="SIIF Rocket"
               width={450}
               height={225}
-              className="object-contain drop-shadow-[20px_20px_50px_rgba(0,0,0,0.1)]"
+              className="w-full h-auto object-contain drop-shadow-[20px_20px_50px_rgba(0,0,0,0.1)] relative z-20"
               priority
             />
-          </motion.div>
-        </div>
+          </div>
+        </motion.div>
       </div>
 
       <div className="mt-auto mb-16 w-full py-6 bg-[#F8F8F8] border-t border-zinc-100">
         <div className="container mx-auto px-4 md:px-6">
           <p
-            className="font-semibold text-right ml-auto flex-shrink-0"
+            className="font-semibold text-center md:text-right ml-auto flex-shrink-0"
             style={{
               fontFamily: '"Hanken Grotesk", sans-serif',
-              fontSize: 'clamp(1rem, 2vw, 24px)',
+              fontSize: 'clamp(0.875rem, 2vw, 24px)',
               lineHeight: '129.909%',
               letterSpacing: '-0.96px',
               color: '#9D9696',
-              width: '725px',
+              width: 'auto',
               maxWidth: '100%',
             }}
           >

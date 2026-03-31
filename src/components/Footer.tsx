@@ -26,7 +26,7 @@ export const Footer = () => {
             </span>
             <Link
               href="mailto:incubator@sjcetpalai.ac.in"
-              className="text-[clamp(16px,1.5vw,20px)] font-semibold leading-[115.967%] tracking-[-0.04em] text-[#C41E3A] font-hanken underline decoration-[#C41E3A] underline-offset-4 break-all"
+              className="text-[clamp(14px,1.5vw,20px)] font-semibold leading-[115.967%] tracking-[-0.04em] text-[#C41E3A] font-hanken underline decoration-[#C41E3A] underline-offset-4 whitespace-nowrap"
             >
               incubator@sjcetpalai.ac.in
             </Link>
